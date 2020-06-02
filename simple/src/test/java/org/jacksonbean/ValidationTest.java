@@ -30,6 +30,17 @@ public class ValidationTest {
     }
 
     @Test
+    public void negativeTestCustomField() throws JsonProcessingException {
+        TestEntity notValidTestEntity = createNotValidTestEntity();
+        notValidTestEntity.getSubEntity().setCustomField("incorrect");
+        String json = mapper.writeValueAsString(notValidTestEntity);
+        System.out.println(json);
+        Assertions.assertThrows(JsonProcessingException.class, () -> {
+            TestEntity testEntity = mapper.readValue(json, TestEntity.class);
+        });
+    }
+
+    @Test
     public void notValidPayload_withoutValidationTest_shouldPass() throws JsonProcessingException {
         ObjectMapper mapperWithoutValidation = new ObjectMapper();
         String json = mapperWithoutValidation.writeValueAsString(createNotValidTestEntity());
