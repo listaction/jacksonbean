@@ -1,9 +1,9 @@
-package org.jacksonbean.vertx;
+package io.github.listaction.vertx;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.jacksonbean.TestEntity;
+import io.github.listaction.shared.TestEntity;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Promise;
 import io.vertx.core.Vertx;
@@ -12,7 +12,7 @@ import io.vertx.core.logging.LoggerFactory;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
 import io.vertx.ext.web.handler.BodyHandler;
-import org.jacksonbean.ObjectMapperValidationFactory;
+import io.github.listaction.core.ObjectMapperValidationFactory;
 
 public class MainVerticle extends AbstractVerticle {
 

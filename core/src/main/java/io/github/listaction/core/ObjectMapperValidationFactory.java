@@ -1,4 +1,4 @@
-package org.jacksonbean;
+package io.github.listaction.core;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

@@ -1,4 +1,4 @@
-package org.jacksonbean;
+package io.github.listaction.shared;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;

@@ -1,5 +1,6 @@
-package org.jacksonbean;
+package io.github.listaction.spring;
 
+import io.github.listaction.shared.TestEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

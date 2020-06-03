@@ -1,4 +1,4 @@
-package org.jacksonbean;
+package io.github.listaction.spring;
 
 import com.google.common.base.Predicates;
 import org.springframework.context.annotation.Bean;

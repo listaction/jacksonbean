@@ -1,4 +1,4 @@
-package org.jacksonbean;
+package io.github.listaction.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

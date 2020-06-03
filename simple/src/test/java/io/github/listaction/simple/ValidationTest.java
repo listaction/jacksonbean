@@ -1,7 +1,10 @@
-package org.jacksonbean;
+package io.github.listaction.simple;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.github.listaction.core.ObjectMapperValidationFactory;
+import io.github.listaction.shared.SubEntity;
+import io.github.listaction.shared.TestEntity;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -52,16 +55,16 @@ public class ValidationTest {
         SubEntity subEntity = new SubEntity();
         subEntity.setUrl("http://google.com");
         subEntity.setCustomField("correct_value");
-        
+
         List<String> list = new ArrayList<String>();
         list.add("test");
-        
+
         TestEntity entity = new TestEntity();
         entity.setValue1("test");
         entity.setListValue(list);
         entity.setSubEntity(subEntity);
 
-        return entity;        
+        return entity;
     }
 
     private TestEntity createNotValidTestEntity(){

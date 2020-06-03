@@ -43,7 +43,7 @@
         </dependency>
 
         <dependency>
-            <groupId>org.jacksonbean</groupId>
+            <groupId>io.github.listaction</groupId>
             <artifactId>shared</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
