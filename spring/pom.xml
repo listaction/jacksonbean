@@ -9,9 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring</artifactId>
-
-    <description>Spring boot demo</description>
+    <groupId>io.github.listaction.jacksonbean</groupId>
+    <artifactId>validation-spring</artifactId>
+    <name>Jackson Bean Validation Spring Boot Example</name>
+    <description>Demo for jackson bean validation in a Spring boot project</description>
 
     <dependencies>
         <!-- spring boot -->
@@ -43,9 +44,9 @@
         </dependency>
 
         <dependency>
-            <groupId>io.github.listaction</groupId>
-            <artifactId>shared</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>io.github.listaction.jacksonbean</groupId>
+            <artifactId>validation-shared</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
     </dependencies>
@@ -76,6 +77,14 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>3.0.0</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
             </plugin>
         </plugins>
     </build>

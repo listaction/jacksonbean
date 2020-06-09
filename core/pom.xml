@@ -3,13 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>validation</artifactId>
-        <groupId>io.github.listaction</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>io.github.listaction.jacksonbean</groupId>
+        <artifactId>validation-parent</artifactId>
+        <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>core</artifactId>
+    <artifactId>validation-core</artifactId>
+    <name>Jackson Bean Validation Core</name>
+    <description>Core processing module for JSR-380 annotation validation in jackson</description>
+
     <build>
         <plugins>
             <plugin>
